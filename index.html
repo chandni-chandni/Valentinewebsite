@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Little Valentine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="floating-hearts" id="floatingHearts"></div>
+
+<div class="wrapper">
+
+  <!-- Screen 1 -->
+  <div class="card" id="screen1">
+    <h1 class="title">💝 Little Valentine 💝</h1>
+    <p class="subtitle">Someone made this just for you</p>
+
+    <input type="text" id="nameInput" placeholder="Enter a name..." maxlength="30">
+    <br>
+    <button onclick="openLetter()">Open Letter</button>
+  </div>
+
+  <!-- Screen 2 -->
+  <div class="card hidden" id="screen2">
+    <div class="decor">💌 💌 💌</div>
+
+    <h2 id="greeting"></h2>
+
+    <p class="message">
+      I made this little Valentine just for you.
+    </p>
+
+    <p class="highlight" id="noteText"></p>
+
+    <div class="letter-body" id="letterBody"></div>
+
+    <div class="signature">
+      With warmth,<br>
+      <strong>Made with care</strong>
+    </div>
+
+    <div class="actions">
+      <button class="back" onclick="goBack()">Back</button>
+      <button class="reset" onclick="resetAll()">Make another</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
